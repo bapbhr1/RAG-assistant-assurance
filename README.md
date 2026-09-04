@@ -10,11 +10,13 @@ Le corpus est entièrement synthétique : 15 contrats, 112 clauses, 12 branches,
 générés par IA. Aucune donnée client réelle.
 
 <p align="center">
-  <img width="900" alt="Interface de l'assistant" src="https://github.com/user-attachments/assets/8b78f1cf-ab6e-4734-8387-3f5c2c0c2d7d" />
+  <img width="964" height="743" alt="image" src="https://github.com/user-attachments/assets/c676187e-34a4-4342-98ab-a28556973654" />
+
 </p>
 
 <p align="center">
-  <img width="900" alt="Détail d'une réponse" src="https://github.com/user-attachments/assets/ecdd5f8b-0e4c-46a7-96cf-655875bc0b73" />
+  <img width="964" height="743" alt="image" src="https://github.com/user-attachments/assets/d1d34a77-df6e-49fb-9151-064ef3a84fa5" />
+
 </p>
 
 ## Pourquoi ce projet
