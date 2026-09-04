@@ -1,0 +1,26 @@
+# Secrets et environnement
+.streamlit/secrets.toml
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Modèles et caches
+.cache/
+*.pt
+
+# Système et éditeurs
+.DS_Store
+.vscode/
+.idea/

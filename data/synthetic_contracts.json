@@ -1,0 +1,697 @@
+[
+  {
+    "contract_id": "AUTO-2024-001",
+    "product": "Assurance Auto",
+    "product_line": "auto",
+    "title": "Contrat d'Assurance Automobile - Formule Tous Risques",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "A1",
+        "title": "Article 1 - Objet du contrat",
+        "text": "Le présent contrat garantit le véhicule désigné aux Conditions Particulières contre les risques définis ci-après. La garantie s'applique en France métropolitaine et dans les pays figurant sur la carte internationale d'assurance (carte verte)."
+      },
+      {
+        "article_id": "A2",
+        "title": "Article 2 - Garantie Responsabilité Civile",
+        "text": "L'assureur garantit les conséquences pécuniaires de la responsabilité civile de l'assuré en raison des dommages corporels et matériels causés à des tiers. Cette garantie est obligatoire. Le plafond de garantie pour les dommages corporels est illimité. Le plafond pour les dommages matériels est fixé à 100 000 000 EUR par sinistre."
+      },
+      {
+        "article_id": "A3",
+        "title": "Article 3 - Garantie Dommages Tous Accidents",
+        "text": "L'assureur garantit les dommages subis par le véhicule assuré résultant d'un accident, d'une collision, d'un versement ou du heurt d'un corps fixe ou mobile. La franchise applicable est de 350 EUR par sinistre. Cette garantie ne s'applique pas si le conducteur était en état d'ivresse (taux d'alcoolémie supérieur à 0,5 g/l de sang)."
+      },
+      {
+        "article_id": "A4",
+        "title": "Article 4 - Garantie Vol et Incendie",
+        "text": "L'assureur indemnise l'assuré en cas de vol total du véhicule, de tentative de vol ou d'incendie. En cas de vol total, l'indemnisation intervient après un délai de carence de 30 jours. La valeur retenue est la valeur de remplacement à dire d'expert. Une franchise de 500 EUR s'applique en cas de vol partiel."
+      },
+      {
+        "article_id": "A5",
+        "title": "Article 5 - Exclusions",
+        "text": "Sont exclus de toutes garanties : les dommages intentionnels causés par l'assuré, les dommages survenus lors de courses ou compétitions, les dommages lorsque le conducteur ne possède pas de permis de conduire valide, les dommages nucléaires, et les dommages résultant de la guerre civile ou étrangère."
+      },
+      {
+        "article_id": "A6",
+        "title": "Article 6 - Assistance et Dépannage",
+        "text": "L'assistance 0 km est incluse. En cas de panne ou d'accident, l'assureur organise le remorquage du véhicule vers le garage le plus proche et prend en charge les frais dans la limite de 200 EUR. Un véhicule de remplacement est fourni pour une durée maximale de 5 jours."
+      },
+      {
+        "article_id": "A7",
+        "title": "Article 7 - Garantie Bris de glace",
+        "text": "L'assureur prend en charge le remplacement ou la réparation du pare-brise, des vitres latérales, de la lunette arrière et des optiques de phares. La réparation d'un impact (sans remplacement) est prise en charge sans franchise. En cas de remplacement complet du pare-brise, une franchise de 80 EUR reste à la charge de l'assuré. Le recours à un réparateur agréé supprime cette franchise."
+      },
+      {
+        "article_id": "A8",
+        "title": "Article 8 - Garantie du conducteur",
+        "text": "L'assureur garantit l'indemnisation des dommages corporels subis par le conducteur du véhicule assuré, y compris lorsqu'il est responsable de l'accident. Le capital garanti est de 500 000 EUR. Les frais médicaux, la perte de revenus et le préjudice permanent sont pris en charge. Aucune indemnisation n'est due si le conducteur conduisait sans permis valide ou sous l'emprise de stupéfiants."
+      },
+      {
+        "article_id": "A9",
+        "title": "Article 9 - Aménagements et accessoires",
+        "text": "L'assureur garantit les aménagements, équipements et accessoires du véhicule installés de manière permanente (attelage, aménagement utilitaire, équipements pour personne à mobilité réduite) dans la limite de 5 000 EUR, sous réserve de justificatifs d'achat. Les accessoires non déclarés ne sont pas garantis."
+      },
+      {
+        "article_id": "A10",
+        "title": "Article 10 - Catastrophes naturelles et technologiques",
+        "text": "L'assureur garantit les dommages au véhicule résultant d'une catastrophe naturelle ou technologique reconnue par arrêté interministériel. Une franchise légale de 380 EUR s'applique et ne peut être rachetée. La déclaration doit intervenir dans les 30 jours suivant la publication de l'arrêté."
+      }
+    ]
+  },
+  {
+    "contract_id": "HAB-2024-002",
+    "product": "Assurance Habitation",
+    "product_line": "habitation",
+    "title": "Contrat Multirisque Habitation - Formule Confort",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "H1",
+        "title": "Article 1 - Biens assurés",
+        "text": "Le contrat garantit le logement désigné aux Conditions Particulières ainsi que le mobilier et les biens personnels qu'il contient. Le capital mobilier assuré est fixé à 40 000 EUR. Les objets de valeur (bijoux, œuvres d'art) sont couverts dans la limite de 5 000 EUR sauf déclaration spécifique."
+      },
+      {
+        "article_id": "H2",
+        "title": "Article 2 - Garantie Incendie et événements assimilés",
+        "text": "L'assureur garantit les dommages matériels causés par un incendie, une explosion, la foudre ou la chute de la foudre. Sont également couverts les dommages électriques aux appareils dans la limite de 3 000 EUR. Aucune franchise n'est appliquée pour la garantie incendie."
+      },
+      {
+        "article_id": "H3",
+        "title": "Article 3 - Garantie Dégâts des eaux",
+        "text": "L'assureur garantit les dommages causés par les fuites, ruptures ou débordements de canalisations, d'appareils à effet d'eau et de chéneaux. La franchise applicable est de 150 EUR par sinistre. La recherche de fuite est prise en charge dans la limite de 2 000 EUR. Les dommages dus à un défaut d'entretien caractérisé sont exclus."
+      },
+      {
+        "article_id": "H4",
+        "title": "Article 4 - Garantie Vol et Vandalisme",
+        "text": "L'assureur garantit le vol des biens mobiliers commis par effraction, escalade ou usage de fausses clés. L'assuré doit déclarer le sinistre dans les 48 heures et déposer plainte auprès des autorités. Une franchise de 200 EUR s'applique. Le vol n'est pas couvert si le logement est inhabité depuis plus de 90 jours consécutifs."
+      },
+      {
+        "article_id": "H5",
+        "title": "Article 5 - Responsabilité Civile Vie Privée",
+        "text": "L'assureur garantit les conséquences pécuniaires de la responsabilité civile de l'assuré et des membres de son foyer pour les dommages causés à des tiers dans le cadre de la vie privée. Le plafond de garantie est de 5 000 000 EUR par sinistre. Les dommages causés par les animaux domestiques sont couverts."
+      },
+      {
+        "article_id": "H6",
+        "title": "Article 6 - Exclusions générales",
+        "text": "Sont exclus : les dommages résultant d'un défaut d'entretien ou de vétusté, les dommages causés intentionnellement par l'assuré, les dommages de nature esthétique sans altération fonctionnelle, et les dommages survenus pendant une période de non-paiement de la prime."
+      },
+      {
+        "article_id": "H7",
+        "title": "Article 7 - Garantie Catastrophes naturelles",
+        "text": "L'assureur garantit les dommages matériels directs causés par une catastrophe naturelle, sous réserve de la publication d'un arrêté interministériel de reconnaissance de l'état de catastrophe naturelle. L'assuré doit déclarer le sinistre dans les 30 jours suivant la publication de l'arrêté. Une franchise légale de 380 EUR s'applique et ne peut être rachetée."
+      },
+      {
+        "article_id": "H8",
+        "title": "Article 8 - Protection juridique",
+        "text": "L'assureur accompagne l'assuré dans la défense de ses intérêts en cas de litige lié au logement (voisinage, travaux, bail). Les honoraires d'avocat et frais de procédure sont pris en charge dans la limite de 15 000 EUR par litige. Un seuil d'intervention de 300 EUR de litige minimum est requis. Les litiges nés avant la souscription sont exclus."
+      },
+      {
+        "article_id": "H9",
+        "title": "Article 9 - Bris de glace",
+        "text": "L'assureur garantit le bris accidentel des vitres, fenêtres, portes-fenêtres, vérandas, miroirs fixés et plaques vitrocéramiques du logement. Le remplacement est pris en charge à hauteur de 3 000 EUR par sinistre, sans franchise pour les surfaces vitrées principales."
+      },
+      {
+        "article_id": "H10",
+        "title": "Article 10 - Dommages électriques et jardin",
+        "text": "L'assureur indemnise les dommages électriques aux appareils dans la limite de 3 000 EUR, ainsi que les dommages au mobilier de jardin, à la clôture et aux plantations à hauteur de 1 500 EUR. La piscine enterrée est garantie contre les dommages accidentels dans la limite de 5 000 EUR."
+      },
+      {
+        "article_id": "H11",
+        "title": "Article 11 - Relogement et frais annexes",
+        "text": "En cas de sinistre garanti rendant le logement inhabitable, l'assureur prend en charge les frais de relogement de l'assuré dans la limite de 3 000 EUR par mois et pendant 12 mois maximum. Les frais de gardiennage et de déménagement provisoire sont également couverts dans la limite de 2 000 EUR."
+      }
+    ]
+  },
+  {
+    "contract_id": "SANTE-2024-003",
+    "product": "Complémentaire Santé",
+    "product_line": "sante",
+    "title": "Contrat Complémentaire Santé - Formule Équilibre",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "S1",
+        "title": "Article 1 - Objet de la garantie",
+        "text": "Le contrat a pour objet le remboursement des frais de santé engagés par l'assuré en complément des remboursements du régime obligatoire de la Sécurité Sociale. Les remboursements sont exprimés en pourcentage de la Base de Remboursement de la Sécurité Sociale (BRSS)."
+      },
+      {
+        "article_id": "S2",
+        "title": "Article 2 - Remboursement des soins courants",
+        "text": "Les consultations de médecins généralistes et spécialistes sont remboursées à hauteur de 100% de la BRSS en complément de la Sécurité Sociale. Les analyses de laboratoire et les actes de radiologie sont remboursés à 100% de la BRSS. Le dépassement d'honoraires est pris en charge dans la limite de 100% de la BRSS pour les praticiens adhérents à un dispositif de pratique tarifaire maîtrisée."
+      },
+      {
+        "article_id": "S3",
+        "title": "Article 3 - Hospitalisation",
+        "text": "En cas d'hospitalisation, l'assureur prend en charge le forfait journalier hospitalier sans limitation de durée. Les frais de séjour sont remboursés à 100% de la BRSS. La chambre particulière est prise en charge à hauteur de 60 EUR par jour, dans la limite de 60 jours par année civile. Un délai de carence de 3 mois s'applique pour les hospitalisations non consécutives à un accident."
+      },
+      {
+        "article_id": "S4",
+        "title": "Article 4 - Dentaire",
+        "text": "Les soins dentaires sont remboursés à 100% de la BRSS. Les prothèses dentaires sont prises en charge à hauteur de 250% de la BRSS, dans la limite d'un plafond annuel de 1 000 EUR. L'orthodontie pour les enfants de moins de 16 ans est remboursée à 200% de la BRSS. Un délai de carence de 6 mois s'applique pour les prothèses."
+      },
+      {
+        "article_id": "S5",
+        "title": "Article 5 - Optique",
+        "text": "L'assureur rembourse un équipement optique (monture + verres) tous les 2 ans pour les adultes, et tous les ans pour les enfants ou en cas d'évolution de la vue. Le forfait est de 150 EUR pour les verres simples et 250 EUR pour les verres complexes. La monture est prise en charge dans la limite de 100 EUR."
+      },
+      {
+        "article_id": "S6",
+        "title": "Article 6 - Exclusions et délais",
+        "text": "Sont exclus les soins de confort non pris en charge par la Sécurité Sociale, la chirurgie esthétique non réparatrice, et les cures thermales non prescrites. Aucun remboursement n'est effectué pour les soins engagés avant la date d'effet du contrat ou pendant les délais de carence applicables."
+      },
+      {
+        "article_id": "S7",
+        "title": "Article 7 - Maternité et prévention",
+        "text": "L'assureur verse une prime forfaitaire de naissance ou d'adoption de 300 EUR par enfant. Les actes de prévention prévus par la réglementation (vaccins, dépistages) sont remboursés à 100% de la BRSS. Un bilan de prévention bucco-dentaire annuel est intégralement pris en charge. Aucun délai de carence ne s'applique aux actes de prévention."
+      },
+      {
+        "article_id": "S8",
+        "title": "Article 8 - Médecines douces et cures",
+        "text": "L'assureur rembourse les séances de médecines douces (ostéopathie, chiropraxie, acupuncture, psychologie) à hauteur de 40 EUR par séance, dans la limite de 4 séances par an et par bénéficiaire. Les cures thermales prescrites par un médecin et acceptées par la Sécurité Sociale ouvrent droit à un forfait annuel de 200 EUR couvrant frais de transport et d'hébergement."
+      },
+      {
+        "article_id": "S9",
+        "title": "Article 9 - Aides auditives",
+        "text": "Les aides auditives sont remboursées, en complément de la Sécurité Sociale, dans la limite de 400 EUR par oreille tous les 4 ans. Les équipements relevant du dispositif 100% Santé sont intégralement pris en charge, sans reste à charge pour l'assuré. Un délai de carence de 6 mois s'applique."
+      },
+      {
+        "article_id": "S10",
+        "title": "Article 10 - Téléconsultation et assistance",
+        "text": "L'assuré bénéficie d'un service de téléconsultation médicale accessible 24h/24, sans avance de frais et sans limitation du nombre de consultations. En cas d'immobilisation à domicile médicalement prescrite, une aide-ménagère est proposée dans la limite de 20 heures par an."
+      },
+      {
+        "article_id": "S11",
+        "title": "Article 11 - Vaccins et soins à l'étranger",
+        "text": "Les vaccins non remboursés par la Sécurité Sociale, y compris ceux requis pour un voyage, sont pris en charge dans la limite de 100 EUR par an et par bénéficiaire. Les soins médicaux urgents engagés lors d'un séjour temporaire à l'étranger sont remboursés sur la base des tarifs français."
+      }
+    ]
+  },
+  {
+    "contract_id": "PREV-2024-004",
+    "product": "Prévoyance",
+    "product_line": "prevoyance",
+    "title": "Contrat de Prévoyance - Garantie des Accidents de la Vie",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "P1",
+        "title": "Article 1 - Objet du contrat",
+        "text": "Le contrat a pour objet de verser des prestations en cas de décès, d'incapacité de travail ou d'invalidité de l'assuré résultant d'une maladie ou d'un accident. Les prestations sont versées à l'assuré ou aux bénéficiaires désignés aux Conditions Particulières."
+      },
+      {
+        "article_id": "P2",
+        "title": "Article 2 - Garantie Décès",
+        "text": "En cas de décès de l'assuré, l'assureur verse aux bénéficiaires un capital de 100 000 EUR. Ce capital est majoré de 20 000 EUR par enfant à charge. Le décès résultant d'un accident donne lieu au versement d'un capital doublé. Le suicide est garanti à compter de la deuxième année d'adhésion."
+      },
+      {
+        "article_id": "P3",
+        "title": "Article 3 - Incapacité Temporaire de Travail",
+        "text": "En cas d'arrêt de travail médicalement justifié, l'assureur verse des indemnités journalières de 50 EUR après une franchise de 90 jours d'arrêt continu. Le versement est maintenu tant que dure l'incapacité, dans la limite de 1 095 jours. La reprise d'activité à temps partiel thérapeutique maintient 50% de l'indemnité."
+      },
+      {
+        "article_id": "P4",
+        "title": "Article 4 - Invalidité Permanente",
+        "text": "En cas d'invalidité permanente reconnue, l'assureur verse une rente annuelle proportionnelle au taux d'invalidité. Une rente pleine de 24 000 EUR par an est versée pour un taux d'invalidité supérieur ou égal à 66%. Pour un taux compris entre 33% et 66%, la rente est réduite proportionnellement. Aucune rente n'est due en dessous de 33%."
+      },
+      {
+        "article_id": "P5",
+        "title": "Article 5 - Exclusions",
+        "text": "Sont exclus les sinistres résultant de la pratique de sports aériens ou de sports à risque non déclarés, les conséquences d'un état alcoolique ou de l'usage de stupéfiants, les faits volontaires de l'assuré, et les affections ou accidents antérieurs à la date d'adhésion non déclarés."
+      },
+      {
+        "article_id": "P6",
+        "title": "Article 6 - Délais de carence",
+        "text": "Un délai de carence de 3 mois s'applique aux garanties liées à la maladie. Aucun délai de carence ne s'applique en cas d'accident. Les garanties prennent effet à la date d'adhésion sous réserve du paiement de la première cotisation."
+      },
+      {
+        "article_id": "P7",
+        "title": "Article 7 - Rente éducation",
+        "text": "En cas de décès de l'assuré, une rente éducation est versée à chaque enfant à charge jusqu'à ses 18 ans, ou 26 ans s'il poursuit des études. Le montant annuel est de 3 000 EUR par enfant, revalorisé chaque année. Cette rente se cumule avec le capital décès."
+      },
+      {
+        "article_id": "P8",
+        "title": "Article 8 - Assistance et soutien psychologique",
+        "text": "À la suite d'un décès ou d'un accident grave garanti, l'assureur met à disposition des bénéficiaires un service d'assistance : soutien psychologique téléphonique, aide aux démarches administratives et, si nécessaire, présence d'une aide à domicile dans la limite de 30 heures."
+      }
+    ]
+  },
+  {
+    "contract_id": "EMPR-2024-005",
+    "product": "Assurance Emprunteur",
+    "product_line": "emprunteur",
+    "title": "Contrat d'Assurance Emprunteur - Prêt Immobilier",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "E1",
+        "title": "Article 1 - Objet et quotité assurée",
+        "text": "Le contrat garantit le remboursement du capital restant dû ou des échéances du prêt immobilier en cas de sinistre affectant l'emprunteur. La quotité assurée est indiquée aux Conditions Particulières et peut aller jusqu'à 100% du capital emprunté par tête assurée."
+      },
+      {
+        "article_id": "E2",
+        "title": "Article 2 - Garantie Décès et PTIA",
+        "text": "En cas de décès ou de Perte Totale et Irréversible d'Autonomie (PTIA) de l'assuré, l'assureur rembourse au prêteur le capital restant dû à la date du sinistre, dans la limite de la quotité assurée. La PTIA correspond à l'incapacité définitive d'exercer toute activité et à la nécessité de recourir à l'assistance d'une tierce personne."
+      },
+      {
+        "article_id": "E3",
+        "title": "Article 3 - Garantie ITT",
+        "text": "En cas d'Incapacité Temporaire Totale de travail (ITT), l'assureur prend en charge les échéances du prêt après une franchise de 90 jours d'arrêt continu. La prise en charge est proportionnelle à la quotité assurée et cesse à la reprise du travail ou au 1095e jour d'indemnisation."
+      },
+      {
+        "article_id": "E4",
+        "title": "Article 4 - Garantie Perte d'Emploi",
+        "text": "En cas de licenciement ouvrant droit aux allocations chômage, l'assureur prend en charge 50% de l'échéance mensuelle du prêt après une franchise de 120 jours. La prise en charge est limitée à 18 mensualités par sinistre et à 36 mensualités sur toute la durée du prêt. Un délai d'attente de 6 mois s'applique après la souscription."
+      },
+      {
+        "article_id": "E5",
+        "title": "Article 5 - Exclusions",
+        "text": "Sont exclus les sinistres résultant d'affections non déclarées lors de l'adhésion, la démission volontaire pour la garantie perte d'emploi, les périodes d'essai, les affections psychiques non hospitalisées au-delà de 60 jours, et les sinistres liés à la pratique de sports extrêmes non déclarés."
+      },
+      {
+        "article_id": "E6",
+        "title": "Article 6 - Formalités médicales",
+        "text": "L'adhésion peut être soumise à un questionnaire de santé ou à un examen médical selon l'âge de l'assuré et le montant emprunté. Depuis la loi Lemoine, aucune formalité médicale n'est exigée pour les prêts inférieurs à 200 000 EUR par assuré remboursés avant le 60e anniversaire. Toute fausse déclaration entraîne la nullité du contrat."
+      },
+      {
+        "article_id": "E7",
+        "title": "Article 7 - Garantie Invalidité Permanente",
+        "text": "En cas d'Invalidité Permanente Totale (IPT, taux supérieur ou égal à 66%), l'assureur rembourse le capital restant dû selon la quotité assurée. En cas d'Invalidité Permanente Partielle (IPP, taux compris entre 33% et 66%), la prise en charge des échéances est proportionnelle au taux d'invalidité retenu."
+      },
+      {
+        "article_id": "E8",
+        "title": "Article 8 - Résiliation et changement d'assurance",
+        "text": "Conformément à la loi Lemoine, l'assuré peut résilier son contrat d'assurance emprunteur à tout moment et sans frais, sous réserve de présenter un contrat de substitution offrant des garanties équivalentes. Le prêteur dispose de dix jours ouvrés pour répondre à toute demande de substitution."
+      }
+    ]
+  },
+  {
+    "contract_id": "VOY-2024-006",
+    "product": "Assurance Voyage",
+    "product_line": "voyage",
+    "title": "Contrat d'Assurance Voyage - Formule Monde",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "V1",
+        "title": "Article 1 - Frais médicaux à l'étranger",
+        "text": "L'assureur prend en charge les frais médicaux, chirurgicaux et d'hospitalisation engagés à l'étranger à la suite d'une maladie ou d'un accident, dans la limite de 1 000 000 EUR. Les frais dentaires d'urgence sont couverts dans la limite de 300 EUR. Une franchise de 30 EUR s'applique par dossier de frais médicaux."
+      },
+      {
+        "article_id": "V2",
+        "title": "Article 2 - Rapatriement médical",
+        "text": "En cas d'atteinte à la santé, l'assureur organise et prend en charge sans limitation de montant le transport ou le rapatriement de l'assuré vers un établissement adapté ou son domicile. La décision de rapatriement relève exclusivement du médecin régulateur de l'assureur. Le retour d'un proche accompagnant est également pris en charge."
+      },
+      {
+        "article_id": "V3",
+        "title": "Article 3 - Annulation de voyage",
+        "text": "L'assureur rembourse les frais d'annulation facturés par l'organisateur en cas d'événement garanti survenant avant le départ (maladie grave, décès d'un proche, licenciement, dommage grave au domicile). Le remboursement est plafonné à 8 000 EUR par personne. Une franchise de 50 EUR par personne reste à charge. L'annulation pour motif personnel non justifié est exclue."
+      },
+      {
+        "article_id": "V4",
+        "title": "Article 4 - Bagages",
+        "text": "L'assureur indemnise la perte, le vol ou la détérioration des bagages dans la limite de 2 000 EUR par personne. Les objets de valeur sont couverts dans la limite de 50% de ce plafond. En cas de retard de livraison des bagages supérieur à 24 heures, une indemnité forfaitaire de 150 EUR est versée pour l'achat de première nécessité."
+      },
+      {
+        "article_id": "V5",
+        "title": "Article 5 - Exclusions",
+        "text": "Sont exclus les voyages entrepris malgré une contre-indication médicale, les destinations formellement déconseillées par le Ministère des Affaires étrangères, les conséquences d'épidémies déclarées avant le départ, la pratique de sports à risque non souscrits en option, et les dommages liés à la consommation d'alcool ou de stupéfiants."
+      },
+      {
+        "article_id": "V6",
+        "title": "Article 6 - Responsabilité civile à l'étranger",
+        "text": "L'assureur garantit les conséquences pécuniaires de la responsabilité civile de l'assuré pour les dommages causés à des tiers pendant le voyage, dans la limite de 4 500 000 EUR. Les dommages causés dans le cadre d'une activité professionnelle ou de la conduite d'un véhicule terrestre à moteur sont exclus."
+      },
+      {
+        "article_id": "V7",
+        "title": "Article 7 - Assistance juridique et caution pénale",
+        "text": "En cas de poursuite à l'étranger à la suite d'un accident involontaire, l'assureur avance la caution pénale dans la limite de 15 000 EUR et prend en charge les honoraires d'avocat jusqu'à 5 000 EUR. Les infractions volontaires et la conduite en état d'ivresse sont exclues."
+      },
+      {
+        "article_id": "V8",
+        "title": "Article 8 - Sports d'hiver (option)",
+        "text": "Lorsque l'option est souscrite, l'assureur garantit les frais de secours sur piste et hors-piste balisé, la location de matériel de remplacement et le remboursement du forfait de remontées mécaniques non utilisé en cas d'accident ou de maladie. Le hors-piste non encadré reste exclu."
+      }
+    ]
+  },
+  {
+    "contract_id": "PRO-2024-007",
+    "product": "Multirisque Professionnelle",
+    "product_line": "pro",
+    "title": "Contrat Multirisque Professionnelle - TPE/PME",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "R1",
+        "title": "Article 1 - Responsabilité Civile Professionnelle",
+        "text": "L'assureur garantit les conséquences pécuniaires de la responsabilité civile de l'entreprise pour les dommages corporels, matériels et immatériels causés à des tiers dans le cadre de son activité. Le plafond de garantie est de 8 000 000 EUR par année d'assurance pour les dommages corporels et de 2 000 000 EUR pour les dommages matériels et immatériels."
+      },
+      {
+        "article_id": "R2",
+        "title": "Article 2 - Incendie et dommages aux locaux",
+        "text": "L'assureur garantit les dommages causés aux locaux professionnels, au matériel et aux marchandises par un incendie, une explosion ou un dégât des eaux. Le contenu est assuré à hauteur de 250 000 EUR. Une franchise de 500 EUR s'applique par sinistre. Les marchandises stockées à l'extérieur ou en sous-sol inondable sont exclues."
+      },
+      {
+        "article_id": "R3",
+        "title": "Article 3 - Perte d'exploitation",
+        "text": "À la suite d'un sinistre garanti entraînant une interruption d'activité, l'assureur indemnise la perte de marge brute et les frais supplémentaires d'exploitation pendant la période d'indemnisation, limitée à 12 mois. L'indemnité vise à replacer l'entreprise dans la situation financière qui aurait été la sienne sans le sinistre. Une franchise de 3 jours ouvrés s'applique."
+      },
+      {
+        "article_id": "R4",
+        "title": "Article 4 - Protection juridique professionnelle",
+        "text": "L'assureur prend en charge la défense des intérêts de l'entreprise en cas de litige professionnel (client, fournisseur, salarié, administration). Les frais d'avocat et d'expertise sont couverts dans la limite de 20 000 EUR par litige. Un seuil d'intervention de 500 EUR de litige minimum est requis. Les litiges antérieurs à la souscription sont exclus."
+      },
+      {
+        "article_id": "R5",
+        "title": "Article 5 - Exclusions",
+        "text": "Sont exclus les dommages résultant d'une faute intentionnelle du dirigeant, les amendes et sanctions pénales, les dommages liés à une activité non déclarée aux Conditions Particulières, les créances impayées, et les dommages relevant d'une garantie décennale obligatoire distincte."
+      },
+      {
+        "article_id": "R6",
+        "title": "Article 6 - Cyber-risques",
+        "text": "L'assureur garantit les conséquences d'un incident de cybersécurité affectant l'entreprise : frais de restauration des données, pertes d'exploitation consécutives, frais de notification et de gestion de crise, dans la limite de 100 000 EUR par année d'assurance. Un défaut de mise à jour de sécurité caractérisé peut réduire l'indemnisation."
+      },
+      {
+        "article_id": "R7",
+        "title": "Article 7 - Bris de machine et matériel informatique",
+        "text": "L'assureur garantit les dommages accidentels, électriques ou mécaniques au matériel professionnel et informatique, dans la limite de 50 000 EUR par sinistre. Une franchise de 300 EUR s'applique. L'usure normale, les pannes couvertes par une garantie constructeur et les logiciels sont exclus."
+      },
+      {
+        "article_id": "R8",
+        "title": "Article 8 - Responsabilité des dirigeants",
+        "text": "L'assureur garantit les conséquences pécuniaires de la responsabilité personnelle des dirigeants pour les fautes de gestion commises dans l'exercice de leurs fonctions, dans la limite de 500 000 EUR par année d'assurance. Les fautes intentionnelles et les avantages personnels indus sont exclus."
+      }
+    ]
+  },
+  {
+    "contract_id": "AUTO-2024-008",
+    "product": "Assurance Auto",
+    "product_line": "auto",
+    "title": "Contrat d'Assurance Automobile - Formule au Tiers",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "AT1",
+        "title": "Article 1 - Objet et étendue",
+        "text": "La formule au Tiers garantit la responsabilité civile obligatoire de l'assuré et les garanties de base décrites ci-après. Elle ne couvre pas les dommages subis par le véhicule assuré en cas d'accident responsable. La garantie s'applique en France métropolitaine et dans les pays de la carte internationale d'assurance."
+      },
+      {
+        "article_id": "AT2",
+        "title": "Article 2 - Responsabilité civile",
+        "text": "L'assureur garantit les dommages corporels et matériels causés aux tiers. Le plafond est illimité pour les dommages corporels et fixé à 100 000 000 EUR pour les dommages matériels par sinistre. Cette garantie est obligatoire et ne comporte pas de franchise."
+      },
+      {
+        "article_id": "AT3",
+        "title": "Article 3 - Vol et incendie",
+        "text": "L'assureur indemnise le vol total, la tentative de vol et l'incendie du véhicule. En cas de vol total, l'indemnisation intervient après un délai de carence de 30 jours, sur la base de la valeur de remplacement à dire d'expert. Une franchise de 500 EUR s'applique."
+      },
+      {
+        "article_id": "AT4",
+        "title": "Article 4 - Bris de glace",
+        "text": "La réparation d'un impact sur le pare-brise est prise en charge sans franchise. Le remplacement complet du pare-brise donne lieu à une franchise de 90 EUR, supprimée en cas de recours à un réparateur agréé."
+      },
+      {
+        "article_id": "AT5",
+        "title": "Article 5 - Assistance 50 km",
+        "text": "L'assistance est acquise en cas d'immobilisation du véhicule à plus de 50 km du domicile. Le remorquage est pris en charge dans la limite de 150 EUR. Aucun véhicule de remplacement n'est fourni dans cette formule."
+      },
+      {
+        "article_id": "AT6",
+        "title": "Article 6 - Exclusions",
+        "text": "Sont notamment exclus les dommages subis par le véhicule en l'absence de tiers identifié, les dommages lorsque le conducteur n'a pas de permis valide, la conduite en état d'ivresse ou sous stupéfiants, ainsi que les dommages survenus en compétition."
+      }
+    ]
+  },
+  {
+    "contract_id": "HAB-2024-009",
+    "product": "Assurance Habitation",
+    "product_line": "habitation",
+    "title": "Contrat Multirisque Habitation - Formule Essentielle Locataire",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "HL1",
+        "title": "Article 1 - Biens et responsabilités assurés",
+        "text": "Le contrat garantit la responsabilité du locataire à l'égard du propriétaire et des voisins, ainsi que le mobilier personnel dans la limite d'un capital de 20 000 EUR. Les objets de valeur sont couverts jusqu'à 2 500 EUR sauf déclaration spécifique."
+      },
+      {
+        "article_id": "HL2",
+        "title": "Article 2 - Responsabilité civile locative",
+        "text": "L'assureur garantit les dommages causés au logement loué par un incendie, une explosion ou un dégât des eaux dont le locataire est responsable. Le plafond correspond à la valeur de reconstruction du logement indiquée aux Conditions Particulières."
+      },
+      {
+        "article_id": "HL3",
+        "title": "Article 3 - Dégâts des eaux",
+        "text": "Les dommages causés par les fuites et débordements de canalisations sont garantis. Une franchise de 150 EUR s'applique. La recherche de fuite est prise en charge jusqu'à 1 000 EUR. Les dommages dus à un défaut d'entretien caractérisé sont exclus."
+      },
+      {
+        "article_id": "HL4",
+        "title": "Article 4 - Vol du mobilier",
+        "text": "Le vol par effraction du mobilier personnel est garanti dans la limite de 20 000 EUR, sous réserve de dépôt de plainte sous 48 heures. Le logement inoccupé plus de 60 jours consécutifs n'est pas couvert contre le vol."
+      },
+      {
+        "article_id": "HL5",
+        "title": "Article 5 - Responsabilité civile vie privée",
+        "text": "L'assureur garantit les dommages causés aux tiers par l'assuré et les membres de son foyer dans la vie privée, y compris par les animaux domestiques, dans la limite de 4 500 000 EUR par sinistre."
+      },
+      {
+        "article_id": "HL6",
+        "title": "Article 6 - Exclusions",
+        "text": "Sont exclus les dommages de vétusté ou de défaut d'entretien, les dommages esthétiques sans altération fonctionnelle, les biens professionnels et les dommages survenus pendant une période de non-paiement de la prime."
+      }
+    ]
+  },
+  {
+    "contract_id": "SANTE-2024-010",
+    "product": "Complémentaire Santé",
+    "product_line": "sante",
+    "title": "Contrat Complémentaire Santé - Formule Premium",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "SP1",
+        "title": "Article 1 - Objet",
+        "text": "Le contrat rembourse les frais de santé en complément du régime obligatoire, avec des niveaux de garantie renforcés. Les remboursements sont exprimés en pourcentage de la Base de Remboursement de la Sécurité Sociale (BRSS)."
+      },
+      {
+        "article_id": "SP2",
+        "title": "Article 2 - Soins courants",
+        "text": "Les consultations de généralistes et spécialistes sont remboursées à 200% de la BRSS. Les dépassements d'honoraires sont pris en charge à 300% de la BRSS pour les praticiens adhérents à un dispositif de pratique tarifaire maîtrisée, et 200% sinon."
+      },
+      {
+        "article_id": "SP3",
+        "title": "Article 3 - Hospitalisation",
+        "text": "Les frais de séjour et honoraires sont pris en charge à 300% de la BRSS. Le forfait journalier hospitalier est couvert sans limitation de durée. La chambre particulière est prise en charge à hauteur de 120 EUR par jour sans limitation de durée. Aucun délai de carence ne s'applique."
+      },
+      {
+        "article_id": "SP4",
+        "title": "Article 4 - Dentaire",
+        "text": "Les prothèses dentaires sont remboursées à 400% de la BRSS, dans la limite de 2 500 EUR par an. L'orthodontie est prise en charge à 300% de la BRSS, y compris pour les adultes. Les implants dentaires ouvrent droit à un forfait de 600 EUR par implant, limité à deux par an."
+      },
+      {
+        "article_id": "SP5",
+        "title": "Article 5 - Optique",
+        "text": "Un équipement optique est remboursé chaque année. Le forfait est de 400 EUR pour les verres complexes et 200 EUR pour les verres simples, monture comprise dans la limite de 100 EUR. La chirurgie réfractive est prise en charge à hauteur de 400 EUR par œil."
+      },
+      {
+        "article_id": "SP6",
+        "title": "Article 6 - Médecines douces et bien-être",
+        "text": "Les séances d'ostéopathie, chiropraxie, acupuncture et psychologie sont remboursées à hauteur de 50 EUR par séance, dans la limite de 8 séances par an et par bénéficiaire. Un forfait bien-être de 150 EUR par an couvre les activités de prévention prescrites."
+      },
+      {
+        "article_id": "SP7",
+        "title": "Article 7 - Exclusions",
+        "text": "Sont exclus les soins engagés avant la date d'effet, la chirurgie esthétique non réparatrice, et les soins non prescrits sans lien avec une pathologie. Aucun remboursement n'excède les frais réellement engagés par l'assuré."
+      }
+    ]
+  },
+  {
+    "contract_id": "MOTO-2024-011",
+    "product": "Assurance Moto",
+    "product_line": "moto",
+    "title": "Contrat d'Assurance Moto - Formule Intégrale",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "M1",
+        "title": "Article 1 - Objet et véhicule assuré",
+        "text": "Le contrat garantit la moto désignée aux Conditions Particulières et son conducteur. La garantie s'applique en France métropolitaine et dans les pays de la carte internationale d'assurance. Les cylindrées et usages non déclarés ne sont pas garantis."
+      },
+      {
+        "article_id": "M2",
+        "title": "Article 2 - Responsabilité civile",
+        "text": "L'assureur garantit les dommages corporels et matériels causés aux tiers. Le plafond est illimité pour les dommages corporels et de 100 000 000 EUR pour les dommages matériels. Cette garantie obligatoire s'applique sans franchise."
+      },
+      {
+        "article_id": "M3",
+        "title": "Article 3 - Équipements du motard",
+        "text": "Les équipements de protection homologués (casque, gants, blouson, airbag, bottes) sont garantis en cas d'accident ou de vol de la moto, dans la limite de 1 500 EUR, sur présentation de justificatifs. Une franchise de 80 EUR s'applique par sinistre."
+      },
+      {
+        "article_id": "M4",
+        "title": "Article 4 - Vol et incendie",
+        "text": "Le vol et l'incendie de la moto sont garantis sous réserve de l'utilisation d'un dispositif antivol homologué SRA. L'indemnisation intervient après un délai de carence de 30 jours pour le vol total, sur la base de la valeur de remplacement à dire d'expert. Une franchise de 10% du montant du sinistre, minimum 300 EUR, s'applique."
+      },
+      {
+        "article_id": "M5",
+        "title": "Article 5 - Garantie du conducteur",
+        "text": "L'assureur garantit les dommages corporels du conducteur, y compris responsable, dans la limite d'un capital de 300 000 EUR. Aucune indemnisation n'est due en cas de conduite sans permis valide, sous stupéfiants ou en état d'ivresse."
+      },
+      {
+        "article_id": "M6",
+        "title": "Article 6 - Exclusions",
+        "text": "Sont exclus les dommages survenus lors d'une utilisation sur circuit ou en compétition, les dommages intentionnels, la conduite sans permis adapté à la cylindrée, et les accessoires non homologués ou non déclarés."
+      }
+    ]
+  },
+  {
+    "contract_id": "GAV-2024-012",
+    "product": "Garantie Accidents de la Vie",
+    "product_line": "gav",
+    "title": "Contrat Garantie des Accidents de la Vie - Famille",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "G1",
+        "title": "Article 1 - Objet du contrat",
+        "text": "Le contrat indemnise les conséquences des accidents de la vie privée subis par l'assuré et les membres de sa famille désignés : accidents domestiques, de loisirs, catastrophes naturelles et technologiques, agressions et attentats. Les accidents de la circulation et du travail relèvent d'autres régimes."
+      },
+      {
+        "article_id": "G2",
+        "title": "Article 2 - Seuil d'intervention",
+        "text": "La garantie intervient lorsque l'accident entraîne une atteinte permanente à l'intégrité physique ou psychique supérieure ou égale à 5%. En deçà de ce seuil, aucune indemnisation n'est due au titre du présent contrat."
+      },
+      {
+        "article_id": "G3",
+        "title": "Article 3 - Indemnisation du préjudice",
+        "text": "L'indemnisation est calculée selon le droit commun et couvre l'ensemble des préjudices : pertes de revenus, frais médicaux non remboursés, assistance d'une tierce personne, préjudices personnels. Le capital maximal par événement est de 1 000 000 EUR par bénéficiaire."
+      },
+      {
+        "article_id": "G4",
+        "title": "Article 4 - Garantie décès accidentel",
+        "text": "En cas de décès de l'assuré à la suite d'un accident garanti, un capital de 30 000 EUR est versé au conjoint et de 15 000 EUR par enfant à charge. Ce capital est destiné à faire face aux frais immédiats et à la réorganisation de la famille."
+      },
+      {
+        "article_id": "G5",
+        "title": "Article 5 - Assistance",
+        "text": "À la suite d'un accident garanti, l'assureur organise et prend en charge l'aide à domicile, la garde des enfants, le soutien scolaire et le soutien psychologique, selon les besoins constatés et dans la limite des plafonds prévus aux Conditions Générales."
+      },
+      {
+        "article_id": "G6",
+        "title": "Article 6 - Exclusions",
+        "text": "Sont exclus les accidents résultant de la pratique de sports à risque non déclarés, de l'usage de stupéfiants ou d'un état alcoolique, des faits volontaires de l'assuré, ainsi que les préjudices sans atteinte permanente supérieure au seuil d'intervention."
+      }
+    ]
+  },
+  {
+    "contract_id": "ANIM-2024-013",
+    "product": "Assurance Animaux",
+    "product_line": "animaux",
+    "title": "Contrat d'Assurance Santé Animale - Chien et Chat",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "AN1",
+        "title": "Article 1 - Animaux assurés",
+        "text": "Le contrat garantit les frais vétérinaires du chien ou du chat désigné aux Conditions Particulières, identifié par puce ou tatouage et à jour de ses vaccinations. L'animal doit être âgé de plus de 3 mois et de moins de 8 ans à la souscription."
+      },
+      {
+        "article_id": "AN2",
+        "title": "Article 2 - Frais vétérinaires (maladie et accident)",
+        "text": "L'assureur rembourse les frais de consultation, d'examens, de chirurgie et d'hospitalisation consécutifs à une maladie ou un accident, à hauteur de 80% des frais réels, dans la limite d'un plafond annuel de 2 000 EUR. Une franchise annuelle de 50 EUR s'applique."
+      },
+      {
+        "article_id": "AN3",
+        "title": "Article 3 - Délais de carence",
+        "text": "Un délai de carence de 7 jours s'applique pour les accidents et de 45 jours pour les maladies. Pour les maladies liées à une prédisposition de race, le délai de carence est porté à 6 mois. Aucun remboursement n'intervient pendant ces délais."
+      },
+      {
+        "article_id": "AN4",
+        "title": "Article 4 - Forfait prévention",
+        "text": "Un forfait prévention annuel de 100 EUR couvre les actes non liés à une maladie : vaccins, vermifuges, antiparasitaires, stérilisation et détartrage. Ce forfait n'est pas soumis à franchise et n'est pas reportable d'une année sur l'autre."
+      },
+      {
+        "article_id": "AN5",
+        "title": "Article 5 - Exclusions",
+        "text": "Sont exclus les maladies et affections antérieures à la souscription, les portées et la reproduction, les frais de convenance, les prothèses et les maladies héréditaires connues avant l'adhésion. Les animaux utilisés à des fins professionnelles ou de combat sont exclus."
+      },
+      {
+        "article_id": "AN6",
+        "title": "Article 6 - Responsabilité civile",
+        "text": "Lorsque l'option est souscrite, l'assureur garantit les dommages causés par l'animal à des tiers, dans la limite de 1 000 000 EUR par sinistre. Les dommages causés aux membres du foyer et les dommages résultant d'un défaut de surveillance caractérisé sont exclus."
+      }
+    ]
+  },
+  {
+    "contract_id": "OBSQ-2024-014",
+    "product": "Assurance Obsèques",
+    "product_line": "obseques",
+    "title": "Contrat d'Assurance Obsèques - Capital et Prestations",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "O1",
+        "title": "Article 1 - Objet du contrat",
+        "text": "Le contrat a pour objet le versement d'un capital destiné à financer les obsèques de l'assuré et, le cas échéant, l'organisation des prestations funéraires selon ses volontés exprimées aux Conditions Particulières."
+      },
+      {
+        "article_id": "O2",
+        "title": "Article 2 - Capital garanti",
+        "text": "Le capital garanti est fixé entre 3 000 EUR et 15 000 EUR selon l'option choisie. Il est versé au bénéficiaire désigné ou à l'opérateur funéraire mandaté dans un délai de 48 heures ouvrées après réception des pièces justificatives."
+      },
+      {
+        "article_id": "O3",
+        "title": "Article 3 - Délai de carence",
+        "text": "En cas de décès par maladie survenant au cours de la première année d'adhésion, seules les cotisations versées, majorées de 3%, sont remboursées. Le décès accidentel est garanti dès la souscription, sans délai de carence."
+      },
+      {
+        "article_id": "O4",
+        "title": "Article 4 - Prestations d'assistance",
+        "text": "L'assureur met à disposition des proches une assistance pour l'organisation des obsèques : mise en relation avec un opérateur funéraire, aide aux démarches administratives et soutien psychologique. Le rapatriement du corps est pris en charge dans la limite de 5 000 EUR."
+      },
+      {
+        "article_id": "O5",
+        "title": "Article 5 - Exclusions et revalorisation",
+        "text": "Le capital est revalorisé chaque année selon les résultats financiers de l'assureur. Sont exclus les décès résultant d'un fait volontaire du bénéficiaire. Le suicide de l'assuré est garanti à compter de la deuxième année d'adhésion."
+      }
+    ]
+  },
+  {
+    "contract_id": "SCOL-2024-015",
+    "product": "Assurance Scolaire",
+    "product_line": "scolaire",
+    "title": "Contrat d'Assurance Scolaire et Extrascolaire",
+    "policyholder": "Client Type Foyer",
+    "articles": [
+      {
+        "article_id": "SC1",
+        "title": "Article 1 - Objet et bénéficiaires",
+        "text": "Le contrat garantit l'enfant assuré pendant les activités scolaires, périscolaires et extrascolaires, ainsi que sur le trajet domicile-établissement. La garantie s'applique 24h/24 lorsque l'option extrascolaire est souscrite."
+      },
+      {
+        "article_id": "SC2",
+        "title": "Article 2 - Responsabilité civile",
+        "text": "L'assureur garantit les dommages causés par l'enfant à des tiers pendant les activités garanties, dans la limite de 4 500 000 EUR par sinistre. Les dommages causés aux camarades et aux enseignants sont couverts."
+      },
+      {
+        "article_id": "SC3",
+        "title": "Article 3 - Individuelle accident",
+        "text": "En cas d'accident corporel de l'enfant, l'assureur prend en charge les frais médicaux non remboursés dans la limite de 1 000 EUR, verse un capital invalidité pouvant atteindre 60 000 EUR et un capital décès de 8 000 EUR. Les frais de prothèses dentaire et optique sont couverts jusqu'à 500 EUR."
+      },
+      {
+        "article_id": "SC4",
+        "title": "Article 4 - Assistance",
+        "text": "À la suite d'un accident ou d'une maladie de l'enfant, l'assureur organise le soutien scolaire à domicile, la garde des frères et sœurs et, si nécessaire, le transport vers l'établissement. Le soutien scolaire est assuré dès 15 jours d'absence continue."
+      },
+      {
+        "article_id": "SC5",
+        "title": "Article 5 - Racket et harcèlement",
+        "text": "L'assureur propose une assistance juridique et psychologique en cas de racket, de harcèlement ou de violences subis par l'enfant dans le cadre scolaire. Les objets dérobés lors d'un racket avec violence sont indemnisés dans la limite de 500 EUR."
+      },
+      {
+        "article_id": "SC6",
+        "title": "Article 6 - Exclusions",
+        "text": "Sont exclus les dommages résultant d'une faute intentionnelle de l'enfant en âge de discernement, la pratique de sports à risque non déclarés, et les accidents survenus en dehors des périodes et lieux garantis par la formule souscrite."
+      }
+    ]
+  }
+]

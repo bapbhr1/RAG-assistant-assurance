@@ -1,0 +1,253 @@
+[
+  {
+    "id": "auto-vol-carence",
+    "question": "Mon véhicule a été volé en totalité, à partir de quand suis-je indemnisé ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "AUTO-2024-001", "article_id": "A4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "auto-bris-glace",
+    "question": "La réparation d'un impact sur le pare-brise est-elle soumise à une franchise ?",
+    "product_line": "auto",
+    "relevant": [{"contract_id": "AUTO-2024-001", "article_id": "A7"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "auto-ivresse-exclusion",
+    "question": "Le conducteur était en état d'ivresse lors de l'accident, les dommages au véhicule sont-ils couverts ?",
+    "product_line": null,
+    "relevant": [
+      {"contract_id": "AUTO-2024-001", "article_id": "A3"},
+      {"contract_id": "AUTO-2024-001", "article_id": "A5"}
+    ],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "hab-degats-eaux-franchise",
+    "question": "Quelle franchise s'applique pour un dégât des eaux dans mon logement ?",
+    "product_line": "habitation",
+    "relevant": [{"contract_id": "HAB-2024-002", "article_id": "H3"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "hab-defaut-entretien",
+    "question": "Une fuite due à un défaut d'entretien de mes canalisations est-elle prise en charge ?",
+    "product_line": null,
+    "relevant": [
+      {"contract_id": "HAB-2024-002", "article_id": "H3"},
+      {"contract_id": "HAB-2024-002", "article_id": "H6"}
+    ],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "hab-catnat-franchise",
+    "question": "Quelle est la franchise en cas de catastrophe naturelle sur mon habitation ?",
+    "product_line": "habitation",
+    "relevant": [{"contract_id": "HAB-2024-002", "article_id": "H7"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "hab-chien-tiers",
+    "question": "Mon chien a mordu un passant dans la rue, ma responsabilité est-elle couverte ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "HAB-2024-002", "article_id": "H5"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "sante-protheses-dentaires",
+    "question": "Quel remboursement est prévu pour des prothèses dentaires ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "SANTE-2024-003", "article_id": "S4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "sante-chambre-particuliere",
+    "question": "La chambre particulière est-elle prise en charge en cas d'hospitalisation ?",
+    "product_line": "sante",
+    "relevant": [{"contract_id": "SANTE-2024-003", "article_id": "S3"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "sante-chirurgie-esthetique",
+    "question": "La chirurgie esthétique est-elle remboursée par ma complémentaire santé ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "SANTE-2024-003", "article_id": "S6"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "sante-osteopathie",
+    "question": "Combien de séances d'ostéopathie sont remboursées par an ?",
+    "product_line": "sante",
+    "relevant": [{"contract_id": "SANTE-2024-003", "article_id": "S8"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "prev-deces-capital",
+    "question": "Quel capital est versé en cas de décès et est-il majoré si j'ai des enfants ?",
+    "product_line": "prevoyance",
+    "relevant": [{"contract_id": "PREV-2024-004", "article_id": "P2"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "prev-suicide-premiere-annee",
+    "question": "Le décès par suicide est-il garanti dès la première année d'adhésion ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "PREV-2024-004", "article_id": "P2"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "prev-invalidite-taux",
+    "question": "Quelle rente est versée pour une invalidité permanente reconnue à 40 % ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "PREV-2024-004", "article_id": "P4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "empr-itt-arret",
+    "question": "L'arrêt de travail est-il couvert par l'assurance emprunteur ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "EMPR-2024-005", "article_id": "E3"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "empr-perte-emploi",
+    "question": "En cas de licenciement, quelle part de mon échéance de prêt est prise en charge ?",
+    "product_line": "emprunteur",
+    "relevant": [{"contract_id": "EMPR-2024-005", "article_id": "E4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "empr-loi-lemoine",
+    "question": "Ai-je besoin d'un questionnaire de santé pour un prêt de 150 000 EUR remboursé avant 60 ans ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "EMPR-2024-005", "article_id": "E6"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "voy-annulation-maladie",
+    "question": "Suis-je couvert pour un voyage annulé à la suite d'une maladie grave ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "VOY-2024-006", "article_id": "V3"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "voy-rapatriement",
+    "question": "Le rapatriement médical depuis l'étranger est-il plafonné ?",
+    "product_line": "voyage",
+    "relevant": [{"contract_id": "VOY-2024-006", "article_id": "V2"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "pro-perte-exploitation",
+    "question": "Pendant combien de temps la perte d'exploitation est-elle indemnisée après un sinistre ?",
+    "product_line": "pro",
+    "relevant": [{"contract_id": "PRO-2024-007", "article_id": "R3"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "auto-tiers-dommages-propres",
+    "question": "Avec une formule au tiers, les dommages à mon propre véhicule dans un accident responsable sont-ils couverts ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "AUTO-2024-008", "article_id": "AT1"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "moto-equipements-motard",
+    "question": "Mon casque et mon blouson sont-ils remboursés après une chute en moto ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "MOTO-2024-011", "article_id": "M3"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "moto-vol-antivol",
+    "question": "Le vol de ma moto est-il couvert et sous quelle condition d'antivol ?",
+    "product_line": "moto",
+    "relevant": [{"contract_id": "MOTO-2024-011", "article_id": "M4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "gav-seuil-intervention",
+    "question": "Un accident domestique avec 3 % d'incapacité permanente est-il indemnisé par la garantie accidents de la vie ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "GAV-2024-012", "article_id": "G2"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "animaux-carence-maladie",
+    "question": "Mon chien tombe malade deux semaines après la souscription, les frais vétérinaires sont-ils remboursés ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "ANIM-2024-013", "article_id": "AN3"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "animaux-forfait-prevention",
+    "question": "Les vaccins et la stérilisation de mon chat sont-ils pris en charge ?",
+    "product_line": "animaux",
+    "relevant": [{"contract_id": "ANIM-2024-013", "article_id": "AN4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "obseques-carence-premiere-annee",
+    "question": "En cas de décès par maladie la première année, le capital obsèques est-il versé en entier ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "OBSQ-2024-014", "article_id": "O3"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "obseques-rapatriement-corps",
+    "question": "Le rapatriement du corps est-il pris en charge par l'assurance obsèques ?",
+    "product_line": "obseques",
+    "relevant": [{"contract_id": "OBSQ-2024-014", "article_id": "O4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "scolaire-harcelement",
+    "question": "Mon enfant est victime de harcèlement à l'école, une assistance est-elle prévue ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "SCOL-2024-015", "article_id": "SC5"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "sante-premium-implants",
+    "question": "Les implants dentaires sont-ils remboursés par la complémentaire santé ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "SANTE-2024-010", "article_id": "SP4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "emprunteur-substitution-lemoine",
+    "question": "Puis-je changer d'assurance emprunteur en cours de prêt et à quelles conditions ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "EMPR-2024-005", "article_id": "E8"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "habitation-relogement",
+    "question": "Si mon logement devient inhabitable après un sinistre, les frais de relogement sont-ils pris en charge ?",
+    "product_line": "habitation",
+    "relevant": [{"contract_id": "HAB-2024-002", "article_id": "H11"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "pro-cyber",
+    "question": "Après une cyberattaque, la restauration des données de l'entreprise est-elle couverte ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "PRO-2024-007", "article_id": "R6"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "voyage-caution-penale",
+    "question": "En cas de poursuite à l'étranger après un accident involontaire, la caution pénale est-elle avancée ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "VOY-2024-006", "article_id": "V7"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "prevoyance-rente-education",
+    "question": "En cas de décès, mes enfants perçoivent-ils une rente pour leurs études ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "PREV-2024-004", "article_id": "P7"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  }
+]
