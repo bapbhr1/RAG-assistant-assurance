@@ -92,7 +92,6 @@ Créer `.streamlit/secrets.toml` :
 
 ```toml
 GROQ_API_KEY = "gsk_..."
-# HTTPS_PROXY = "http://..."   # optionnel, réseau d'entreprise
 ```
 
 Puis, depuis la racine :
