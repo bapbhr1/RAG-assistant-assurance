@@ -1,4 +1,4 @@
-# Recherche hybride avec un faux modèle d'embeddings (aucun téléchargement).
+# Recherche hybride avec un faux modèle d'embeddings (aucun téléchargement)
 
 import pytest
 from conftest import make_chunk
