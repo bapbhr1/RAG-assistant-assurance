@@ -109,3 +109,4 @@ class RAGResponse(LLMAnswer):
     confidence_breakdown: ConfidenceBreakdown
     retrieved: list[RetrievedChunk] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
+    service_unavailable: bool = False

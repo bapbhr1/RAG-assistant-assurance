@@ -1,6 +1,13 @@
 # Garde-fous de bout en bout : le modèle est simulé, les contrôles sont réels.
 
-from conftest import FakeGroq, FakeRetriever, llm_payload
+from conftest import (
+    FakeGroq,
+    FakeGroqError,
+    FakeRetriever,
+    connection_error,
+    llm_payload,
+    rate_limit_error,
+)
 
 from src.models import (
     CoverageStatus,
@@ -60,6 +67,25 @@ def test_json_invalide_renvoie_vers_un_gestionnaire(retrieved):
     assert response.status == CoverageStatus.NEEDS_REVIEW
     assert response.confidence == 0.0
     assert response.warnings[0].startswith("Échec de la génération structurée")
+    assert response.service_unavailable is False
+
+
+def test_quota_groq_atteint_signale_indisponibilite(retrieved):
+    engine = RAGEngine(FakeRetriever(retrieved), api_key="test")
+    engine.client = FakeGroqError(rate_limit_error())
+    response = _ask(engine)
+    assert response.status == CoverageStatus.NEEDS_REVIEW
+    assert response.service_unavailable is True
+    assert "quota" in response.warnings[0].lower()
+
+
+def test_groq_indisponible_signale_indisponibilite(retrieved):
+    engine = RAGEngine(FakeRetriever(retrieved), api_key="test")
+    engine.client = FakeGroqError(connection_error())
+    response = _ask(engine)
+    assert response.status == CoverageStatus.NEEDS_REVIEW
+    assert response.service_unavailable is True
+    assert "indisponible" in response.warnings[0].lower()
 
 
 def test_aucune_clause_abstention_fiable():

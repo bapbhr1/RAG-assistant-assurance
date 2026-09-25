@@ -157,63 +157,71 @@ def render_response(response: RAGResponse, key_prefix: str = "response") -> None
         for item in response.missing_information:
             st.markdown(f"- {item}")
 
-    conf_name, conf_help = confidence_label(response)
-    left, right = st.columns([1, 3], vertical_alignment="center")
-    left.metric("Fiabilité de la réponse", f"{response.confidence:.0%}", conf_name)
-    with right:
-        st.progress(response.confidence)
-        st.caption(conf_help)
-
-    with st.expander("Voir le calcul de la fiabilité"):
-        breakdown = response.confidence_breakdown
-        facts_points = round(breakdown.factual_support * 50)
-        caution_points = round(breakdown.uncertainty_handling * 30)
-        sources_points = round(breakdown.source_handling * 20)
-        total_points = facts_points + caution_points + sources_points
-        checks = response.evidence_checks
-        supported = sum(check.supported for check in checks)
-
-        st.markdown(
-            f"### {facts_points}/50 + {caution_points}/30 + "
-            f"{sources_points}/20 = {total_points}/100"
+    if response.service_unavailable:
+        _notice(
+            response.warnings[0]
+            if response.warnings
+            else "Le service d'analyse (Groq) est momentanément indisponible.",
+            "error",
         )
-        if checks:
+    else:
+        conf_name, conf_help = confidence_label(response)
+        left, right = st.columns([1, 3], vertical_alignment="center")
+        left.metric("Fiabilité de la réponse", f"{response.confidence:.0%}", conf_name)
+        with right:
+            st.progress(response.confidence)
+            st.caption(conf_help)
+
+        with st.expander("Voir le calcul de la fiabilité"):
+            breakdown = response.confidence_breakdown
+            facts_points = round(breakdown.factual_support * 50)
+            caution_points = round(breakdown.uncertainty_handling * 30)
+            sources_points = round(breakdown.source_handling * 20)
+            total_points = facts_points + caution_points + sources_points
+            checks = response.evidence_checks
+            supported = sum(check.supported for check in checks)
+
+            st.markdown(
+                f"### {facts_points}/50 + {caution_points}/30 + "
+                f"{sources_points}/20 = {total_points}/100"
+            )
+            if checks:
+                st.write(
+                    f"**Informations vérifiées — {facts_points}/50**  \n"
+                    f"{supported} affirmation(s) sur {len(checks)} retrouvée(s) dans les contrats."
+                )
+                for check in checks:
+                    check_label = "Confirmé" if check.supported else "À vérifier"
+                    st.write(f"**{check_label} —** {check.claim}")
+            else:
+                no_claim_message = (
+                    "L'assistant n'a présenté aucune affirmation contractuelle non vérifiée."
+                    if facts_points == 50
+                    else "Aucune réponse exploitable n'a pu être contrôlée."
+                )
+                st.write(f"**Informations vérifiées — {facts_points}/50**  \n{no_claim_message}")
             st.write(
-                f"**Informations vérifiées — {facts_points}/50**  \n"
-                f"{supported} affirmation(s) sur {len(checks)} retrouvée(s) dans les contrats."
+                f"**Réponse adaptée — {caution_points}/30**  \n"
+                + (
+                    "L'assistant a de lui-même répondu ou demandé une validation au bon moment."
+                    if caution_points == 30
+                    else "L'assistant a été trop affirmatif ou trop prudent au regard des éléments "
+                    "disponibles ; le garde-fou a pu corriger sa décision."
+                )
             )
-            for check in checks:
-                check_label = "Confirmé" if check.supported else "À vérifier"
-                st.write(f"**{check_label} —** {check.claim}")
-        else:
-            no_claim_message = (
-                "L'assistant n'a présenté aucune affirmation contractuelle non vérifiée."
-                if facts_points == 50
-                else "Aucune réponse exploitable n'a pu être contrôlée."
+            st.write(
+                f"**Utilisation des sources — {sources_points}/20**  \n"
+                + (
+                    "Les sources utiles ont été exploitées, ou leur insuffisance a été correctement signalée."
+                    if sources_points == 20
+                    else "Le lien entre la question et les sources disponibles est moins direct."
+                )
             )
-            st.write(f"**Informations vérifiées — {facts_points}/50**  \n{no_claim_message}")
-        st.write(
-            f"**Réponse adaptée — {caution_points}/30**  \n"
-            + (
-                "L'assistant a de lui-même répondu ou demandé une validation au bon moment."
-                if caution_points == 30
-                else "L'assistant a été trop affirmatif ou trop prudent au regard des éléments "
-                "disponibles ; le garde-fou a pu corriger sa décision."
+            st.caption(
+                "Une fiabilité élevée peut accompagner une absence de réponse : cela signifie alors "
+                "que l'assistant a correctement reconnu qu'il ne devait pas conclure. "
+                "Cet indice mesure les contrôles automatiques, pas une certitude juridique."
             )
-        )
-        st.write(
-            f"**Utilisation des sources — {sources_points}/20**  \n"
-            + (
-                "Les sources utiles ont été exploitées, ou leur insuffisance a été correctement signalée."
-                if sources_points == 20
-                else "Le lien entre la question et les sources disponibles est moins direct."
-            )
-        )
-        st.caption(
-            "Une fiabilité élevée peut accompagner une absence de réponse : cela signifie alors "
-            "que l'assistant a correctement reconnu qu'il ne devait pas conclure. "
-            "Cet indice mesure les contrôles automatiques, pas une certitude juridique."
-        )
 
     st.markdown("#### Preuves contractuelles")
     if not response.citations:
@@ -257,7 +265,7 @@ def render_response(response: RAGResponse, key_prefix: str = "response") -> None
                 item.chunk.article_title,
                 key=f"{key_prefix}_reason_{index}_{item.chunk.contract_id}_{item.chunk.article_id}",
             )
-        if response.warnings:
+        if response.warnings and not response.service_unavailable:
             _notice(
                 "Certains éléments n'ont pas pu être confirmés dans les contrats. "
                 "Vérifiez le dossier avant de communiquer une décision au client.",

@@ -6,6 +6,8 @@ import hashlib
 import json
 from types import SimpleNamespace
 
+import groq
+import httpx
 import numpy as np
 import pytest
 
@@ -74,6 +76,27 @@ class FakeGroq:
         message = SimpleNamespace(content=self.content)
         usage = SimpleNamespace(prompt_tokens=100, completion_tokens=50)
         return SimpleNamespace(choices=[SimpleNamespace(message=message)], usage=usage)
+
+
+class FakeGroqError:
+    # imite client.chat.completions.create mais lève une erreur du SDK Groq
+    def __init__(self, exc: Exception) -> None:
+        self.exc = exc
+        self.chat = SimpleNamespace(completions=SimpleNamespace(create=self._create))
+
+    def _create(self, **kwargs):
+        raise self.exc
+
+
+def rate_limit_error() -> groq.RateLimitError:
+    request = httpx.Request("POST", "https://api.groq.com/openai/v1/chat/completions")
+    response = httpx.Response(429, request=request, json={"error": {"message": "quota atteint"}})
+    return groq.RateLimitError("quota atteint", response=response, body=None)
+
+
+def connection_error() -> groq.APIConnectionError:
+    request = httpx.Request("POST", "https://api.groq.com/openai/v1/chat/completions")
+    return groq.APIConnectionError(message="Connection error.", request=request)
 
 
 def llm_payload(**overrides) -> str:

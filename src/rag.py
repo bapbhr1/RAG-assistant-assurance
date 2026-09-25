@@ -7,6 +7,8 @@ import os
 import re
 import unicodedata
 
+import groq
+
 from .models import (
     Citation,
     ClaimEvidence,
@@ -286,7 +288,10 @@ class RAGEngine:
 
     @staticmethod
     def _manual_response(
-        retrieved: list[RetrievedChunk], detail: str, reliable_abstention: bool = False
+        retrieved: list[RetrievedChunk],
+        detail: str,
+        reliable_abstention: bool = False,
+        service_unavailable: bool = False,
     ) -> RAGResponse:
         reliability = 1.0 if reliable_abstention else 0.0
         return RAGResponse(
@@ -317,6 +322,7 @@ class RAGEngine:
             ),
             retrieved=retrieved,
             warnings=[detail],
+            service_unavailable=service_unavailable,
         )
 
     def answer(self, query: RAGQuery) -> RAGResponse:
@@ -401,6 +407,19 @@ class RAGEngine:
                 )
             payload = json.loads(content)
             llm_answer = LLMAnswer.model_validate(payload)
+        except groq.RateLimitError:
+            return self._manual_response(
+                retrieved,
+                "Le quota du service d'analyse (Groq) est atteint. "
+                "Réessayez plus tard ou contactez l'administrateur.",
+                service_unavailable=True,
+            )
+        except groq.APIError as exc:
+            return self._manual_response(
+                retrieved,
+                f"Le service d'analyse (Groq) est momentanément indisponible : {exc}",
+                service_unavailable=True,
+            )
         except Exception as exc:
             return self._manual_response(
                 retrieved, f"Échec de la génération structurée : {exc}"
