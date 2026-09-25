@@ -19,7 +19,7 @@ générés par IA. Aucune donnée client réelle.
 
 </p>
 
-## Pourquoi ce projet
+## Lien testable (Streamlit Cloud) : https://rag-assistant-assurance-f8bpqw6tve9jssay7gcuwg.streamlit.app/
 
 Sur un assistant contractuel, une réponse fausse mais plausible est plus
 dangereuse qu'une absence de réponse. Deux erreurs reviennent : la recherche
