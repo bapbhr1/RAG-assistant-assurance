@@ -19,7 +19,7 @@ from src.retriever import HybridRetriever
 
 DATA_PATH = Path(__file__).parent / "data" / "synthetic_contracts.json"
 HERO_PATH = Path(__file__).parent / "assets" / "contract-assistant-hero.png"
-APP_STATE_VERSION = 5
+APP_STATE_VERSION = 6
 
 PRODUCT_LINES = {
     "Toutes les branches": None,
@@ -157,7 +157,7 @@ def render_response(response: RAGResponse, key_prefix: str = "response") -> None
         for item in response.missing_information:
             st.markdown(f"- {item}")
 
-    if response.service_unavailable:
+    if getattr(response, "service_unavailable", False):
         _notice(
             response.warnings[0]
             if response.warnings
@@ -265,7 +265,7 @@ def render_response(response: RAGResponse, key_prefix: str = "response") -> None
                 item.chunk.article_title,
                 key=f"{key_prefix}_reason_{index}_{item.chunk.contract_id}_{item.chunk.article_id}",
             )
-        if response.warnings and not response.service_unavailable:
+        if response.warnings and not getattr(response, "service_unavailable", False):
             _notice(
                 "Certains éléments n'ont pas pu être confirmés dans les contrats. "
                 "Vérifiez le dossier avant de communiquer une décision au client.",
