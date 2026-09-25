@@ -249,5 +249,91 @@
     "product_line": null,
     "relevant": [{"contract_id": "PREV-2024-004", "article_id": "P7"}],
     "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "auto-remorquage-plafond",
+    "question": "Avec la formule tous risques, le remorquage de ma voiture en panne m'a coûté 350 EUR. Est-il remboursé intégralement ?",
+    "product_line": "auto",
+    "relevant": [{"contract_id": "AUTO-2024-001", "article_id": "A6"}],
+    "expected_status": "PARTIELLEMENT_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "voyage-bagages-plafond",
+    "question": "Mes bagages d'une valeur de 3 000 EUR ont été volés pendant mon voyage, seront-ils remboursés en totalité ?",
+    "product_line": "voyage",
+    "relevant": [{"contract_id": "VOY-2024-006", "article_id": "V4"}],
+    "expected_status": "PARTIELLEMENT_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "moto-vol-antivol-inconnu",
+    "question": "La moto d'un assuré a été volée et on ne sait pas encore si elle était équipée d'un antivol. Peut-on confirmer la prise en charge ?",
+    "product_line": "moto",
+    "relevant": [{"contract_id": "MOTO-2024-011", "article_id": "M4"}],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
+  },
+  {
+    "id": "prev-arret-dossier-incomplet",
+    "question": "Un assuré nous transmet un arrêt maladie, sans que l'on sache depuis quand il est arrêté ni depuis quand il a adhéré. Doit-on lui verser des indemnités journalières ?",
+    "product_line": "prevoyance",
+    "relevant": [
+      {"contract_id": "PREV-2024-004", "article_id": "P3"},
+      {"contract_id": "PREV-2024-004", "article_id": "P6"}
+    ],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
+  },
+  {
+    "id": "animaux-operation-date-inconnue",
+    "question": "Le chat d'un assuré doit être opéré à la suite d'une maladie, mais nous n'avons pas la date de souscription. Le remboursement est-il acquis ?",
+    "product_line": "animaux",
+    "relevant": [
+      {"contract_id": "ANIM-2024-013", "article_id": "AN2"},
+      {"contract_id": "ANIM-2024-013", "article_id": "AN3"}
+    ],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
+  },
+  {
+    "id": "hab-vol-bijoux-incomplet",
+    "question": "Un assuré habitation déclare le vol de bijoux à son domicile, sans préciser s'il y a eu effraction ni s'il a porté plainte. Peut-on l'indemniser ?",
+    "product_line": "habitation",
+    "relevant": [
+      {"contract_id": "HAB-2024-002", "article_id": "H4"},
+      {"contract_id": "HAB-2024-009", "article_id": "HL4"}
+    ],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
+  },
+  {
+    "id": "hors-corpus-voilier",
+    "question": "Mon voilier a été endommagé au port lors d'une tempête, est-il couvert ?",
+    "product_line": null,
+    "relevant": [],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
+  },
+  {
+    "id": "hors-corpus-assurance-vie",
+    "question": "Quel est le taux de rendement garanti de mon contrat d'assurance vie ?",
+    "product_line": null,
+    "relevant": [],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
+  },
+  {
+    "id": "hors-corpus-smartphone",
+    "question": "L'écran de mon smartphone s'est cassé, la garantie casse prend-elle en charge la réparation ?",
+    "product_line": null,
+    "relevant": [],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
+  },
+  {
+    "id": "hors-corpus-piratage-bancaire",
+    "question": "Mon compte bancaire personnel a été piraté, suis-je remboursé des sommes dérobées ?",
+    "product_line": null,
+    "relevant": [],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
+  },
+  {
+    "id": "hors-corpus-loyers-impayes",
+    "question": "Mon locataire ne paie plus ses loyers, la garantie loyers impayés s'applique-t-elle ?",
+    "product_line": null,
+    "relevant": [],
+    "expected_status": "A_VERIFIER_PAR_GESTIONNAIRE"
   }
 ]

@@ -52,15 +52,15 @@ CHAT_VIEW = "Assistant"
 DOCUMENTS_VIEW = "Documents"
 
 
-def _configure_network() -> None:
-    # reporte un éventuel proxy d'entreprise (secrets) vers les variables d'env
-    try:
-        proxy = st.secrets.get("HTTPS_PROXY")
-    except Exception:
-        proxy = None
-    if proxy:
-        os.environ.setdefault("HTTP_PROXY", proxy)
-        os.environ.setdefault("HTTPS_PROXY", proxy)
+def _configure_tracing() -> None:
+    # clés Langfuse (secrets) reportées vers les variables d'env ; sans elles, pas de traçage
+    for name in ("LANGFUSE_PUBLIC_KEY", "LANGFUSE_SECRET_KEY", "LANGFUSE_HOST"):
+        try:
+            value = st.secrets.get(name)
+        except Exception:
+            value = None
+        if value:
+            os.environ.setdefault(name, str(value))
 
 
 def get_api_key() -> str | None:
@@ -77,6 +77,11 @@ def get_retriever() -> HybridRetriever:
     retriever = HybridRetriever()
     retriever.index(build_corpus(load_contracts(DATA_PATH)))
     return retriever
+
+
+@st.cache_resource(show_spinner=False)
+def get_engine(api_key: str) -> RAGEngine:
+    return RAGEngine(get_retriever(), api_key=api_key, model=DEFAULT_GROQ_MODEL)
 
 
 @st.cache_data
@@ -190,9 +195,10 @@ def render_response(response: RAGResponse, key_prefix: str = "response") -> None
         st.write(
             f"**Réponse adaptée — {caution_points}/30**  \n"
             + (
-                "L'assistant a répondu ou demandé une validation au bon moment."
+                "L'assistant a de lui-même répondu ou demandé une validation au bon moment."
                 if caution_points == 30
-                else "L'assistant a été trop affirmatif ou trop prudent au regard des éléments disponibles."
+                else "L'assistant a été trop affirmatif ou trop prudent au regard des éléments "
+                "disponibles ; le garde-fou a pu corriger sa décision."
             )
         )
         st.write(
@@ -403,10 +409,7 @@ def render_chat(api_key: str | None) -> None:
             ]
             try:
                 with st.spinner("Recherche des clauses, analyse et contrôle des preuves…"):
-                    engine = RAGEngine(
-                        get_retriever(), api_key=api_key, model=DEFAULT_GROQ_MODEL
-                    )
-                    response = engine.answer(
+                    response = get_engine(api_key).answer(
                         RAGQuery(
                             question=question.strip(),
                             product_line=PRODUCT_LINES[branch],
@@ -591,7 +594,7 @@ def render_documents() -> None:
 
 
 def main() -> None:
-    _configure_network()
+    _configure_tracing()
     st.set_page_config(
         page_title="Assistant IA pour contrats",
         layout="wide",
