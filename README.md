@@ -28,7 +28,7 @@ remonte la mauvaise clause, ou le modèle invente une clause qui n'existe pas.
 Le choix fait ici est un contrôle déterministe après génération : toute
 affirmation qui ne se retrouve pas littéralement dans les clauses transmises au
 modèle est rejetée, tout comme un montant absent de la clause citée. Pas de
-framework RAG non plus : chaque étape est écrite à la main, ce qui la rend
+framework RAG non plus : chaque étape créée manuellement, ce qui la rend
 testable (voir `tests/`).
 
 ## Fonctionnalités
@@ -132,12 +132,12 @@ python3 -m pip install -r requirements-dev.txt
 python3 -m pytest
 ```
 
-## Traçage (optionnel)
+## Traçage 
 
 Avec des clés [Langfuse](https://langfuse.com) dans `.streamlit/secrets.toml` ou
 dans l'environnement, chaque question produit une trace : clauses remontées et
 scores, prompt et réponse du modèle, tokens consommés, résultat des contrôles et
-statut avant/après le garde-fou. Sans clés, rien n'est envoyé.
+statut avant/après le garde-fou.
 
 ```toml
 LANGFUSE_PUBLIC_KEY = "pk-lf-..."
@@ -165,14 +165,9 @@ Puis, depuis la racine :
 streamlit run app.py
 ```
 
-Il faut Python 3.11+ (3.12 conseillé), une clé API Groq, et un accès internet au
+Il faut Python 3.11+ (3.12 conseillé), clé API Groq / Langfuse (optionnel), et accès internet au
 premier lancement pour télécharger le modèle d'embeddings.
 
-## Déploiement
-
-L'application se déploie telle quelle sur Streamlit Community Cloud : choisir le
-dépôt, `app.py` comme point d'entrée et Python 3.12, puis coller le contenu de
-`secrets.toml` dans les secrets de l'application.
 
 ## Organisation du code
 
