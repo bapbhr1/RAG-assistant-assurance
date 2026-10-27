@@ -9,7 +9,7 @@ humaine quand les éléments sont insuffisants.
 Le corpus est entièrement synthétique : 15 contrats, 112 clauses, 12 branches,
 générés par IA. Aucune donnée client réelle.
 
-Lien testable (Streamlit Cloud) : https://rag-assistant-assurance-f8bpqw6tve9jssay7gcuwg.streamlit.app/
+Lien testable (Streamlit Cloud) : [https://rag-assistant-assurance-f8bpqw6tve9jssay7gcuwg.streamlit.app/](https://rag-assistant-assurance-azdcq7rngnxbzzurrnsyry.streamlit.app/)
 
 <p align="center">
   <img width="964" height="743" alt="image" src="https://github.com/user-attachments/assets/c676187e-34a4-4342-98ab-a28556973654" />
